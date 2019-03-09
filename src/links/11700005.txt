@@ -1,0 +1,6 @@
+Link Type                | Link Name                  | Link
+-------------------------|----------------------------|--------------------------------------------------------------------
+zybooks                  | zyBooks Text               | https://lrps.wgu.edu/provision/130661796
+other                    | UML Overview               | https://srm--c.na60.visual.force.com/apex/coursearticle?Id=kA00c000001DY8nCAG
+other                    | Quizlet                    | https://quizlet.com/_43qugw
+other                    | Course Tips                | https://srm--c.na60.visual.force.com/apex/coursearticle?Id=kA00c000001DXDrCAO

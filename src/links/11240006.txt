@@ -1,0 +1,5 @@
+Link Type                | Link Name                  | Link
+-------------------------|----------------------------|--------------------------------------------------------------------
+zybooks                  | zyBooks Text               | https://lrps.wgu.edu/provision/123536000
+pdf                      | PA Errata                  | https://drive.google.com/open?id=1yuGpx48T7vmVssXRhnKZnE3GrSGW3Zxn
+acrobatiq                | How to Debug               | https://wgu.adobeconnect.com/pwlbac3n2u34/

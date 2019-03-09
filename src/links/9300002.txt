@@ -1,0 +1,7 @@
+Link Type                | Link Name                  | Link
+-------------------------|----------------------------|--------------------------------------------------------------------
+ucertify                 | uCertify                   | https://lrps.wgu.edu/provision/104433232
+pdf                      | FAQ                        | https://docs.google.com/a/wgu.edu/document/d/1DkWwPECpDpIi9o3VHki31pKaUmuCpweh1Sov6ZdM1z0
+pdf                      | PA Check-off List          | https://drive.google.com/open?id=0ByPIuuJpom5naGlzYnlfZkM5eEk
+pdf                      | Troubleshooting Exceptions | https://docs.google.com/a/wgu.edu/document/d/1MC0FMMJoNA-CaNxL__nGd5Z-ewGPS_LgIkPJesTa_AU
+youtube                  | Using the debugger         | https://www.youtube.com/watch?v=2Z9B8wYhKWw
