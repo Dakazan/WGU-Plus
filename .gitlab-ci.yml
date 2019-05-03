@@ -3,11 +3,16 @@ stages:
 
 Deploy:
   only:
-    - master
+    - wip-do-cicd
   stage: deploy
   image: "alpine:latest"
   before_script:
-    - apk add --no-cache curl
+    - apk add --no-cache curl bash zip
   script:
-    - chmod +x ./update.sh
-    - ./update.sh
+    - /bin/bash ./update.sh
+  artifacts:
+    paths:
+      - log.txt
+      - update.zip
+    expire_in: 1 hour
+    when: always
