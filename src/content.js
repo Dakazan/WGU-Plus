@@ -8,7 +8,9 @@ var supportedCourses = [
       7020003,    7040001,    7060002,    7380002,
       7740002,    7880003,    7900007,    8080002,
       8120002,    8400002,    8520002,    8780003,
-      8840002,    9560004,    9860004
+      8840002,    9560004,    9860004,    6860002,
+      9300002,    9780002,    11240006,   11700005,
+      12480005,   12520005,   12520006
     ];
 
 // Create initial timer to check every .5 seconds if page has loaded
@@ -115,6 +117,9 @@ function checkLoaded() {
                                       case "youtube":
                                           currImg = chrome.extension.getURL("images/youtube.png");
                                           break;
+                                      case "zybooks":
+                                          currImg = chrome.extension.getURL("images/zybooks.png");
+                                          break;
                                       default:
                                           currType = "Generic";
                                           currImg = chrome.extension.getURL("images/other.png");
@@ -165,6 +170,9 @@ function checkLoaded() {
                                           break;
                                       case "youtube":
                                           currName = "YouTube Video";
+                                          break;
+                                      case "zybooks":
+                                          currName = "zyBooks Text";
                                           break;
                                       default:
                                           currName = "Generic";

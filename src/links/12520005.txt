@@ -1,0 +1,5 @@
+Link Type                | Link Name                  | Link
+-------------------------|----------------------------|--------------------------------------------------------------------
+zybooks                  | zyBooks Text               | https://lrps.wgu.edu/provision/142398021
+pdf                      | Pacing Guide               | https://access.wgu.edu/ASP3/aap/content/C958%20-%206-Wk%20Pacing%20Guide%20-%20May%202018.pdf
+other                    | Preparation Guide          | https://cm.wgu.edu/t5/Math-Center-Knowledge-Base/Preparing-for-Calculus-I-during-your-Enrollment-Journey/ta-p/5251

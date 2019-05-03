@@ -1,0 +1,4 @@
+Link Type                | Link Name                  | Link
+-------------------------|----------------------------|--------------------------------------------------------------------
+zybooks                  | zyBooks Text               | https://lrps.wgu.edu/provision/142483754
+pdf                      | Pacing Guide               | http://web5.wgu.edu/aap/content/c960_pacingguide_final.pdf
