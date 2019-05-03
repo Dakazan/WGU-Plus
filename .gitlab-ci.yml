@@ -1,0 +1,12 @@
+stages:
+  - deploy
+
+Deploy:
+  only:
+    - master
+  stage: deploy
+  image: "alpine:latest"
+  before_script:
+    - apk add --no-cache curl
+  script:
+    - bash ./update.sh
