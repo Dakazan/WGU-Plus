@@ -3,7 +3,7 @@ stages:
 
 Deploy:
   only:
-    - wip-do-cicd
+    - master
   stage: deploy
   image: "alpine:latest"
   before_script:
