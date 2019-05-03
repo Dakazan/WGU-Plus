@@ -9,4 +9,4 @@ Deploy:
   before_script:
     - apk add --no-cache curl
   script:
-    - bash ./update.sh
+    - ./update.sh
