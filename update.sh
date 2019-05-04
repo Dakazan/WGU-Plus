@@ -26,8 +26,9 @@ function create_zip {
 function upload {
     header "Upload"
     url="https://accounts.google.com/o/oauth2/token"
-    data="client_id=${B_CID1}-${B_CID2}.apps.googleusercontent.com&client_secret=${B_S1}-${B_S2}-${B_S3}&refresh_token=${B_R1}/${B_R2}-${B_R3}&grant_type=refresh_token"
+    data="client_id=${B_CID1}-${B_CID2}.apps.googleusercontent.com&client_secret=${B_CS}&refresh_token=${B_R1}/${B_R2}-${B_R3}&grant_type=refresh_token"
     access_token=$(/usr/bin/curl ${url} -d ${data} | /bin/grep -i access_token | /usr/bin/cut -d"\"" -f4)
+    echo "Access Token: ${access_token}"
 
     header "Uploading File" >> ${BASE_DIR}/log.txt
     /usr/bin/curl -H "Authorization: Bearer ${access_token}" -H "x-goog-api-version: 2" -X PUT -T ${UPDATE_FILE} -v https://www.googleapis.com/upload/chromewebstore/v1.1/items/chaofigalhkdhmphgaanmpbapfjlpjpd >> ${BASE_DIR}/log.txt 2>&1
