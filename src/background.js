@@ -5,8 +5,11 @@ browser.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
   }
 });
 
-// If the Extension Icon is clicked, bring the user to the GitHub page.
-browser.browserAction.onClicked.addListener(function(tab) {
-  var win = window.open("https://github.com/bamhm182/WGU-Plus", "_blank");
-  win.focus();
-});
+function openPage() {
+  browser.tabs.create({
+    url: "https://github.com/bamhm182/WGU-Plus"
+  });
+}
+
+
+browser.browserAction.onClicked.addListener(openPage);
