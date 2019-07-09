@@ -16,7 +16,8 @@ var supportedCourses = [
 // Create initial timer to check every .5 seconds if page has loaded
 var waitTime = setInterval(checkLoaded, 500);
 
-chrome.extension.onMessage.addListener(function(request, sender, response) {
+
+browser.runtime.onMessage.addListener(function(request, sender, response) {
   if (request.type === 'getQuickLinks') {
     // Fired from background.js when the url changes, recreates timer to check if page has loaded
     waitTime = setInterval(checkLoaded, 500);
@@ -57,7 +58,7 @@ function checkLoaded() {
       if(supportedCourses.indexOf(parseInt(currClass, 10)) > -1){
           // Read the file that corresponds to our current class's resources
           var xhr = new XMLHttpRequest();
-          xhr.open('GET', chrome.extension.getURL('links/' + currClass + '.txt'), true);
+          xhr.open('GET', browser.runtime.getURL('links/' + currClass + '.txt'), true);
           xhr.onreadystatechange = function() {
               if (xhr.readyState === 4 && xhr.status === 200) {
                   // Break the file up by line and start using the 3rd line (skip the header)
@@ -81,48 +82,48 @@ function checkLoaded() {
                                   // Set the image based on the type
                                   switch(currType.toLowerCase()){
                                       case "ucertify":
-                                          currImg = chrome.extension.getURL("images/ucertify.png");
+                                          currImg = browser.runtime.getURL("images/ucertify.png");
                                           break;
                                       case "lynda":
-                                          currImg = chrome.extension.getURL("images/lynda.png");
+                                          currImg = browser.runtime.getURL("images/lynda.png");
                                           break;
                                       case "testout":
                                       case "labsim":
-                                          currImg = chrome.extension.getURL("images/testout.png");
+                                          currImg = browser.runtime.getURL("images/testout.png");
                                           break;
                                       case "cbtnuggets":
-                                          currImg = chrome.extension.getURL("images/cbtnuggets.png");
+                                          currImg = browser.runtime.getURL("images/cbtnuggets.png");
                                           break;
                                       case "acrobatiq":
-                                          currImg = chrome.extension.getURL("images/acrobatiq.png");
+                                          currImg = browser.runtime.getURL("images/acrobatiq.png");
                                           break;
                                       case "doc":
-                                          currImg = chrome.extension.getURL("images/doc.png");
+                                          currImg = browser.runtime.getURL("images/doc.png");
                                           break;
                                       case "hawkes":
-                                          currImg = chrome.extension.getURL("images/hawkes.png");
+                                          currImg = browser.runtime.getURL("images/hawkes.png");
                                           break;
                                       case "mindedgeonline":
-                                          currImg = chrome.extension.getURL("images/mindedgeonline.png");
+                                          currImg = browser.runtime.getURL("images/mindedgeonline.png");
                                           break;
                                       case "pdf":
-                                          currImg = chrome.extension.getURL("images/pdf.png");
+                                          currImg = browser.runtime.getURL("images/pdf.png");
                                           break;
                                       case "skillsoft":
-                                          currImg = chrome.extension.getURL("images/skillsoft.png");
+                                          currImg = browser.runtime.getURL("images/skillsoft.png");
                                           break;
                                       case "vitalsource":
-                                          currImg = chrome.extension.getURL("images/vitalsource.png");
+                                          currImg = browser.runtime.getURL("images/vitalsource.png");
                                           break;
                                       case "youtube":
-                                          currImg = chrome.extension.getURL("images/youtube.png");
+                                          currImg = browser.runtime.getURL("images/youtube.png");
                                           break;
                                       case "zybooks":
-                                          currImg = chrome.extension.getURL("images/zybooks.png");
+                                          currImg = browser.runtime.getURL("images/zybooks.png");
                                           break;
                                       default:
                                           currType = "Generic";
-                                          currImg = chrome.extension.getURL("images/other.png");
+                                          currImg = browser.runtime.getURL("images/other.png");
                                           break;
                                   }
                               }
