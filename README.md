@@ -1,4 +1,4 @@
-WGU+ Chrome Extension
+WGU+ Extension
 ==========
 
 Installing
