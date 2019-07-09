@@ -1,12 +1,19 @@
 WGU+ Extension
 ==========
 
-Installing
+Installing on Chrome
 -----
 
 WGU+ is currently available on the Chrome Webstore via the following link:
 
 [WGU+](https://chrome.google.com/webstore/detail/wgu+/chaofigalhkdhmphgaanmpbapfjlpjpd)
+
+Installing on Firefox
+-----
+
+WGU+ can also be manually loaded to firefox by switching to the firefox branch and downloading as zip. Go-to [about:debugging](about:debugging) or, manually build and load extension with [web-ext](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Getting_started_with_web-ext)
+
+
 
 Description
 -----
